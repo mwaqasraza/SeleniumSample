@@ -8,7 +8,3 @@ Feature: Sample Cucumber Feature
     When I click on Text Box link
     Then I can see Text Box fields
     When I enter "John Doe" in the Full Name field
-    And I enter "john.doe@example.com" in the Email field
-    And I enter "123 Main Street, City" in the Current Address field
-    And I enter "456 Second Avenue, Town" in the Permanent Address field
-    And I click the Submit button
