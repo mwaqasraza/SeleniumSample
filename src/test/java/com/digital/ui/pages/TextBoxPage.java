@@ -1,5 +1,23 @@
 package com.digital.ui.pages;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TextBoxPage.java
 package com.nisum.pages;
 
@@ -39,4 +57,29 @@ public class TextBoxPage {
 
     }
 
-}
+private final By currentAddressField = By.id("currentAddress");private final By submitButton = By.id("submit");//modified existing method
+public WebElement getFullNameField() {
+    return driver.findElement(fullNameField);
+}//modified existing method
+public void enterFullName(String fullName) {
+    getFullNameField().sendKeys(fullName);
+}//new method
+public WebElement getCurrentAddressField() {
+    return driver.findElement(currentAddressField);
+}//new method
+public void enterCurrentAddress(String currentAddress) {
+    getCurrentAddressField().sendKeys(currentAddress);
+}//new method
+public WebElement getSubmitButton() {
+    return driver.findElement(submitButton);
+}//new method
+public void clickSubmitButton() {
+    getSubmitButton().click();
+}//modified existing method
+public boolean isTextBoxFieldsDisplayed() {
+    try {
+        return getFullNameField().isDisplayed() && getCurrentAddressField().isDisplayed();
+    } catch (org.openqa.selenium.NoSuchElementException e) {
+        return false;
+    }
+}}
