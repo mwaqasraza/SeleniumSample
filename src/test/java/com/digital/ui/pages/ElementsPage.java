@@ -1,5 +1,9 @@
 package com.digital.ui.pages;
 
+
+
+
+
 // ElementsPage.java
 package com.nisum.pages;
 
@@ -28,4 +32,10 @@ public class ElementsPage {
     public void clickTextBoxLink() {
         getTextBoxLink().click();
     }
-}
+//modified existing method
+public WebElement getTextBoxLink() {
+    return driver.findElement(textBoxLink);
+}//modified existing method
+public void clickTextBoxLink() {
+    getTextBoxLink().click();
+}}

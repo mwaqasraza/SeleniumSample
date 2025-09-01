@@ -1,5 +1,13 @@
 package com.digital.ui.pages;
 
+
+
+
+
+
+
+
+
 // DemoQAPage.java
 package com.nisum.pages;
 
@@ -28,4 +36,13 @@ public class DemoQAPage {
     public void clickElementsTab() {
         getElementsTab().click();
     }
-}
+//modified existing method
+public WebElement getElementsTab() {
+    return driver.findElement(elementsTab);
+}//modified existing method
+public void clickElementsTab() {
+    getElementsTab().click();
+}//new methodpublic String getDemoQAPageUrl() {    return "https://demoqa.com/";}//new method
+public void navigateToDemoQAPage() {
+    driver.get(getDemoQAPageUrl());
+}}
