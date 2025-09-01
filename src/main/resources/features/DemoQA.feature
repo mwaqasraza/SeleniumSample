@@ -8,3 +8,4 @@ Feature: Sample Cucumber Feature
     When I click on Text Box link
     Then I can see Text Box fields
     When I enter "John Doe" in the Full Name field
+    And I enter "123 Main Street, City" in the Current Address field
