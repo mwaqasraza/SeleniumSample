@@ -12,3 +12,4 @@ Feature: Sample Cucumber Feature
     And I enter "123 Main Street, City" in the Current Address field
     And I enter "456 Second Avenue, Town" in the Permanent Address field
     And I click the Submit button
+    Then I can see my information in the output section
