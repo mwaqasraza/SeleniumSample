@@ -1,5 +1,6 @@
 Feature: Sample Cucumber Feature
-
+  
+  @TC_ABS_Commerce_02
   Scenario: Demo QA elements
     Given I am on the Demo QA page "https://demoqa.com/"
     When I click on Elements tab
